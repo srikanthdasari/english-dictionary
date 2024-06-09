@@ -9,7 +9,10 @@
     "react-native": "*",
     "expo": "*",
     "react-native-svg": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "react-native-paper":"*",
+    "react-native-safe-area-context": "*",
+    "react-native-vector-icons": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/dictionary && cp package-lock.json apps/dictionary",

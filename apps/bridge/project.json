@@ -1,0 +1,24 @@
+{
+  "name": "bridge",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "bridge/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "bridge:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "bridge:build:development"
+        },
+        "production": {
+          "buildTarget": "bridge:build:production"
+        }
+      }
+    }
+  }
+}
