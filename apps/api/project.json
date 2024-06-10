@@ -1,7 +1,7 @@
 {
-  "name": "bridge",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "bridge/src",
+  "name": "api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,14 +9,14 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "bridge:build"
+        "buildTarget": "api:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "bridge:build:development"
+          "buildTarget": "api:build:development"
         },
         "production": {
-          "buildTarget": "bridge:build:production"
+          "buildTarget": "api:build:production"
         }
       }
     }

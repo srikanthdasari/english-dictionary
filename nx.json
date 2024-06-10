@@ -40,7 +40,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["bridge-e2e/**/*"]
+      "exclude": ["bridge-e2e/**/*", "api-e2e/**/*", "apps/api-e2e/**/*"]
     },
     {
       "plugin": "@nx/detox/plugin",
